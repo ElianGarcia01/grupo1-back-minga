@@ -12,7 +12,7 @@ import passport from "../middlewares/passport.js"
 
 const authRouter = Router()
 
-authRouter.post('/signIn', validator(SchemaSignIn), accountNotExists, validatePassword, validateRole, generateToken, signIn)
+authRouter.post('/signIn', validator(SchemaSignIn), accountNotExists, validatePassword, validateRole, geneimporrateToken, signIn)
 authRouter.get('/logOut', passport.authenticate('jwt', {session: false}), logOut)
 
 export default authRouter

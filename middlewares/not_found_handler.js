@@ -1,4 +1,4 @@
-const not_found_handler= (request, response, next) => {
+const not_found_handler = (request, response, next) => {
     return response.status(404).json({
         status: 404,
         success: false,
